@@ -9,7 +9,7 @@ spec:
     pfNames: ["ens3f0#0-4"]
   nodeSelector:
     kubernetes.io/hostname: FIXME
-  numVfs: 10
+  numVfs: 32 # the more the better
   priority: 99
   resourceName: dpdk_nic_1
 
