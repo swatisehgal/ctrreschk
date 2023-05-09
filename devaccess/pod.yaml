@@ -6,7 +6,7 @@ metadata:
       {
        "name": "dpdk-network-1",
        "mac": "60:00:00:00:00:01",
-       "namespace": "dpdktest"
+       "namespace": "devaccess"
       },
     ]'
     cpu-load-balancing.crio.io: "disable"
@@ -15,7 +15,7 @@ metadata:
   labels:
     app: dpdk
   name: devaccess
-  namespace: dpdktest
+  namespace: devaccess
 spec:
   runtimeClassName: performance-performance
   affinity:
@@ -35,7 +35,7 @@ spec:
         - /bin/devaccess
       image: quay.io/fromani/devaccess:latest
       imagePullPolicy: Always
-      name: dpdk
+      name: devaccess
       resources:
         limits:
           cpu: "16"
