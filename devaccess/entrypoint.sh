@@ -1,4 +1,6 @@
 #!/bin/bash
+set -ex
+
 # do we have a `/dev/vfio` directory accessible at all?
 if [ ! -d /dev/vfio ]; then
 	exit 1
