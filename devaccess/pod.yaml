@@ -33,7 +33,7 @@ spec:
   containers:
     - command:
         - /bin/devaccess
-      image: quay.io/fromani/devaccess:latest
+      image: quay.io/fromani/devaccess:2023051001
       imagePullPolicy: Always
       name: devaccess
       resources:
